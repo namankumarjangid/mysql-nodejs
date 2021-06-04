@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeQL | Register</title>
+</head>
+
+<body>
+    {{>navbar}}
+    <h2 class="text-center py-4">Register YourSelf</h2>
+    <div class="container">
+        <form class="row g-3" action="/register" method="POST">
+            <div class="col-md-6">
+                <label for="inputName" class="form-label">Name</label>
+                <input type="text" name="name" class="form-control" id="inputName">
+            </div>
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" name="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputAddress" class="form-label">High School</label>
+                <input type="text" name="education" class="form-control" id="inputAddress">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCountry" class="form-label">Country</label>
+                <input type="text" name="country" class="form-control" id="inputCountry">
+            </div>
+            <div class="col-12">
+                <button type="submit" value="register" class="btn btn-primary">Register</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
